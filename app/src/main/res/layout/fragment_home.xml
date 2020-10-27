@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.activity.fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="?attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:weightSum="1"-->
+            <!--            android:orientation="horizontal">-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Players"
+                    android:textColor="@color/darkRed"
+                    android:theme="@style/AppTheme.Dashboard.Text" />
+                <!--        </LinearLayout>-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dashboard_player_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dashboard_player_button"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardCornerRadius="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="See More.."
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dashboard_matches_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkRed"
+                android:text="Matches"
+                android:theme="@style/AppTheme.Dashboard.Text" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dashboard_mathces_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dashboard_matches_button"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="See More.."
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leagues"
+                android:textColor="@color/darkRed"
+                android:theme="@style/AppTheme.Dashboard.Text" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dashboard_leagues_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dashboard_leagues_button"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="See More.."
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
