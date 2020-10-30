@@ -21,11 +21,13 @@ public class SplashScreen extends AppCompatActivity {
         splash();
         main();
     }
+
     public void main(){
         controller.clearContents();
         controller.saveAllQueries();
         controller.loopSplash();
     }
+
     public void splash(){
         splash = findViewById(R.id.splash);
         GlideDrawableImageViewTarget imageViewTarget = new GlideDrawableImageViewTarget(splash);

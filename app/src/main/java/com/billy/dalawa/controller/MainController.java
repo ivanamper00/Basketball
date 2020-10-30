@@ -101,6 +101,8 @@ public class MainController {
         context.startActivity(intent);
     }
 
+
+
     //Next Intent w/o Data Function
     public void NextIntent(Class toClass) {
         NextIntent(toClass, "");
